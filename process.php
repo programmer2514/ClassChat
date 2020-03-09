@@ -70,7 +70,7 @@
 			    // if(preg_match($reg_exUrl, $message, $url)) {
        			//     $message = preg_replace($reg_exUrl, '<a href="'.$url[0].'" target="_blank">'.$url[0].'</a>', $message);
 				// } 
-        	    fwrite(fopen('chat/' . $_COOKIE['chatroom'] . '.txt', 'a'), "<span style='background: #" . $color . "; color: " . $textcol . ";'>". $nickname . "</span>" . $message = str_replace("\n", " ", $message) . "<span id='date'>" . date("h:i m/d/Y") . "</span>\n"); 
+        	    fwrite(fopen('chat/' . $_COOKIE['chatroom'] . '.txt', 'a'), "<span style='background: #" . $color . "; color: " . $textcol . ";'>". $nickname . "</span>" . $message = str_replace(["\n", "<script>", "</script>"], ["", "", ""], $message) . "<span id='date'>" . date("h:i m/d/Y") . "</span>\n"); 
 		    }
         break;
     }
