@@ -1,0 +1,95 @@
+body {
+    font: 12px "Lucida Grande", Sans-Serif;
+    background: url(images/bg.png);
+    text-align: center;
+}
+label {
+    color: white;
+    text-align: center;
+    font: bold 12px "Lucida Grande", Sans-Serif;
+}
+h2 {
+    color: #fa9f00;
+    font: 30px Helvetica, Sans-Serif;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+    position: relative;
+}
+#rname {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#uname {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#submit {
+    font: 12px "Lucida Grande", Sans-Serif;
+    padding: 0px 4px;
+    text-align: center;
+    position: relative;
+}
+#page-wrap {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+}
+#page-wrap p {
+    padding: 0;
+    margin: 0;
+    color: #fa9f00;
+    font: bold italic 12px "Lucida Grande", Sans-Serif;
+}
+#footer {
+    text-align: left;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    top: 100%;
+    left: 0;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    width: calc(100% - 40px);
+    pointer-events: none;
+}
+#footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font: 12px "Lucida Grande", Sans-Serif;
+    margin: 4px;
+    position: relative;
+}
+#footer h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font: bold 12px "Lucida Grande", Sans-Serif;
+    margin: 4px;
+    position: relative;
+}
+#footer span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    font: 12px "Lucida Grande", Sans-Serif;
+    margin: 4px;
+    padding: 20px;
+    top: 50%;
+    right: 0%;
+    -ms-transform: translateY(-58%);
+    transform: translateY(-58%);
+}
+#footer a {
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: auto;
+}
+#footer a:hover { color: rgba(255, 255, 255, 0.7); }

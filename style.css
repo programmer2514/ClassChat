@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px "Lucida Grande", Sans-Serif;
+    background: url(images/bg.png);
+}
+h2 {
+    color: #fa9f00;
+    font: 30px Helvetica, Sans-Serif;
+    font-weight: bold;
+    margin: 0;
+}
+h2 a {
+    font: 12px "Lucida Grande", Sans-Serif;
+    color: #c0c0c0;
+    position: relative;
+    float: right;
+    margin: 0;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 2px 4px;
+}
+q {
+    background-color: #eee;
+    padding: 2px 4px;
+}
+
+.dropbtn {
+    font: 12px "Lucida Grande", Sans-Serif;
+    padding: 0px 4px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 114px;
+    overflow: scroll;
+}
+.dropdown-content a {
+    color: black;
+    padding: 2px 4px;
+    font: 12px "Lucida Grande", Sans-Serif;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+
+.dropbtn-a {
+    font: 12px "Lucida Grande", Sans-Serif;
+    padding: 0px 4px;
+}
+.dropdown-a {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content-a {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 114px;
+    overflow: scroll;
+}
+.dropdown-content-a a {
+    color: black;
+    padding: 2px 4px;
+    font: 12px "Lucida Grande", Sans-Serif;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-a a:hover {background-color: #ddd}
+.show-a {display:block;}
+
+#instructions {
+    color: #fa9f00;
+    font: 12px "Lucida Grande", Sans-Serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+#page-wrap {
+    width: 500px;
+    margin: 30px auto;
+    position: relative;
+}
+#chat-wrap {
+    border: 1px solid #eee;
+    margin: 0 0 15px 0;
+    border-radius: 12px;
+}
+#chat-wrap h1 {
+    color: #aaa;
+    font: 30px Helvetica, Sans-Serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(50% - 80px);
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#chat-area {
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid #666;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+}
+#chat-area span {
+    padding: 4px 8px;
+    border-radius: 12px;
+    margin: 0 5px 0 0;
+}
+#chat-area p {
+    display: inline;
+}
+#chat-area img {
+    max-width: 75%;
+}
+#chat-area div {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+#date {
+    color: #aaa;
+    float: right;
+    position: relative;
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+}
+#name-area {
+    color: white;
+    font: 12px "Lucida Grande", Sans-Serif;
+    text-align: left;
+    padding: 10px 0px;
+    width: 100%;
+}
+#name-area a {
+    font: 12px "Lucida Grande", Sans-Serif;
+    color: #6060ff;
+    position: relative;
+    float: right;
+    margin: 0;
+    -ms-transform: translateY(-95%);
+    transform: translateY(-95%);
+}
+#name-area button {
+    font: 12px "Lucida Grande", Sans-Serif;
+    float: right;
+    padding: 0px 4px;
+}   
+#send-message-area button {
+    font: 12px "Lucida Grande", Sans-Serif;
+    padding: 0px 4px;
+    margin-bottom: 4px;
+}   
+#name-area form {
+    font: 12px "Lucida Grande", Sans-Serif;
+    float: right;
+    margin-right: 4px;
+}   
+#name-area input {
+    font: 12px "Lucida Grande", Sans-Serif;
+    float: right;
+    padding: 0px 4px;
+}   
+#name-area span {
+    font: bold 12px "Lucida Grande", Sans-Serif;
+    color: #fa9f00;
+}
+#msg {
+    text-align: center;
+    color: white;
+    font: 12px "Lucida Grande", Sans-Serif;
+    font-weight: bold;
+}
+#send-message-area {
+    text-align: center;
+    color: white;
+}
+#sendie-wrap {
+    border: 1px solid white;
+    border-radius: 12px;
+}
+#sendie {
+    border: 1px solid #333;
+    width: calc(100% - 18px);
+    font: 12px "Lucida Grande", Sans-Serif;
+    padding: 8px;
+    overflow: scroll;
+    border-radius: 12px;
+}
