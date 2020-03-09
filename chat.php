@@ -156,12 +156,13 @@
             }
             if (localStorage.getItem('signin') === 'true') {
                 localStorage.removeItem('signin');
-                chat.update();
+            chat.update();
     			chat.send(name + ' entered the room.', 'Admin');
             }
         });
 
     	$(function() {
+            chat.update();
     		chat.getState(); 
             $("#sendie").keydown(function(event) {  
                 var key = event.which;  

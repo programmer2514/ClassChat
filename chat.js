@@ -1,5 +1,5 @@
 var instanse = false;
-var state;
+var state = 0;
 var mes;
 var file;
 
