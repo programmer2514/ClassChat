@@ -6,7 +6,7 @@ Try it out [here](https://classchat.calclover2514.repl.co/ "ClassChat v0.4.9")
 
 Current features include:
 - Creating new chat rooms
-- Managing chat rooms
+- Managing/Deleting chat rooms
 - Generating room links
 - Sending images and formatted posts (Uses HTML)
 - Voice-to-text
@@ -16,9 +16,6 @@ Current features include:
 - Endless semi-public chat rooms
 - User join notifications
 - Message send dates
-
-To be added:
-- Deleting chat rooms from the server
 
 ---
 
