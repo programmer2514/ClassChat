@@ -1,5 +1,6 @@
 # ClassChat v0.4.9b
 A PHP, AJAX, jQuery, and Javascript based web chat app
+Try it out [here](https://classchat.calclover2514.repl.co/ "ClassChat v0.4.9")
 
 ---
 
