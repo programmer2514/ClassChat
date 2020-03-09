@@ -24,12 +24,10 @@
         document.cookie = "chatroom=" + chatroom;
 
         function signOut() {
-            $(document).ready(function() {
-                localStorage.removeItem('name');
-                localStorage.removeItem('room');
-                sessionStorage.removeItem('pwdTemp');
-                window.location.href = "index.php";
-            });
+            localStorage.removeItem('name');
+            localStorage.removeItem('room');
+            sessionStorage.removeItem('pwdTemp');
+            window.location.href = "index.php";
         }
 
         function generateLink() {
@@ -152,9 +150,9 @@
 
         $(document).ready(function() {
             if (name === 'admin' || name === 'Admin') {
-                $("#name-area").html("Chat room: <span>" + filterString(atob(chatroom)) + "</span><a href=''></a><br>You are currently signed in as: <span>" + filterString(name) + "</span><button type='button' onclick='signOut()' style='margin: 0px 0px 0px 4px;'>Sign Out</button> <form action='chat.php' method='post'><input type='submit' name='clearChat' value='Clear Chat'/></form> <form action='chat.php' method='post'><input type='submit' name='deleteLastPost' value='Remove Last Post'/></form>");
+                $("#name-area").html("Chat room: <span>" + filterString(atob(chatroom)) + "</span><a href=''></a><br>You are: <span>" + filterString(name) + "</span><button type='button' onclick='signOut()' style='margin: 0px 0px 0px 0px;'>Sign Out</button> <form action='chat.php' method='post'><input type='submit' name='clearChat' value='Clear Chat'/></form> <form action='chat.php' method='post'><input type='submit' name='deleteLastPost' value='Remove Last Post'/></form> <button type='button' onclick='deleteRoom()' style='margin: 0px 4px 0px 4px;'>Delete Room</button>");
             } else {
-                $("#name-area").html("Chat room: <span>" + filterString(atob(chatroom)) + "</span><a href=''></a><br>You are currently signed in as: <span>" + filterString(name) + "</span><button type='button' onclick='signOut()'>Sign Out</button>");
+                $("#name-area").html("Chat room: <span>" + filterString(atob(chatroom)) + "</span><a href=''></a><br>You are: <span>" + filterString(name) + "</span><button type='button' onclick='signOut()'>Sign Out</button>");
             }
             if (localStorage.getItem('signin') === 'true') {
                 localStorage.removeItem('signin');

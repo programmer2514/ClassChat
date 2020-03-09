@@ -5,10 +5,15 @@
     $log = array();
     
     switch ($function) {
+        case ('deleteroom'):
+            unlink('chat/' . $_COOKIE['chatroom'] . '.txt');
+        break;
+
         case ('getpwd'):
             $pwd = trim(fgets(fopen('chat/' . $_COOKIE['chatroom'] . '.txt', 'r')));
             $log['pwd'] = $pwd;
         break;
+
         case ('setpwd'):
             $pwd = $_POST['pwd'];
             file_put_contents('chat/' . $_COOKIE['chatroom'] . '.txt', $pwd . "\n");

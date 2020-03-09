@@ -18,6 +18,27 @@ function getPwd() {
 	});
 }
 
+function deleteRoom () {
+    instanse = true;
+    if (confirm("Are you sure?\nThis action cannot be undone.")) {
+        $.ajax({
+	    	type: "POST",
+	    	url: "process.php",
+	    	data: {  
+	    	   	'function': 'deleteroom'
+	    	},
+	    	dataType: "json",
+	    	success: function(data){
+                signOut();
+	    	},
+            async: false
+	    });
+    } else {
+        setTimeout(updateChat, 1500);
+        return false;
+    }
+}
+
 function filterString(str) {
 	$.ajax({
 		type: "POST",
