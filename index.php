@@ -71,7 +71,7 @@
         </form>
     </div>
     <div id="footer">
-        <h3>ClassChat v0.4.9b</h3>
+        <h3>ClassChat v0.5.1b</h3>
         <p>&copy; 2020 Benjamin J. Pryor</p>
         <span><a href="https://github.com/calclover2514/ClassChat">Project GitHub</a> &bull; <a href="https://repl.it/@calclover2514">My Repls</a> &bull; <a href="https://zg-studios.github.io/projects/">My Website</a> &bull; <a href="mailto:programmer2514@gmail.com">Email Me</a></span>
     </div>
