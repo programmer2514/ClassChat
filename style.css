@@ -27,9 +27,17 @@ code {
     padding: 2px 4px;
 }
 q {
-    color: #666;
-    background-color: #f4f4f4;
+    color: #444;
+    background-color: #f2f2f2;
     padding: 2px 4px;
+}
+
+q:before {
+    content: "“";
+}
+
+q:after {
+    content: "”";
 }
 
 .dropbtn {
