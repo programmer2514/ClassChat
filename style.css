@@ -136,11 +136,13 @@ q:after {
     padding: 20px;
     background: white;
     border-radius: 12px;
+    word-wrap: break-word;
 }
 #chat-area span {
     padding: 4px 8px;
     border-radius: 12px;
     margin: 0 5px 0 0;
+    line-height: 200%;
 }
 #chat-area p {
     display: inline;
@@ -151,14 +153,23 @@ q:after {
 #chat-area div {
     padding: 8px 0;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
 #date {
     color: #aaa;
-    float: right;
-    position: relative;
-    -ms-transform: translateY(-20%);
-    transform: translateY(-20%);
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    display: none;
 }
+#chat-area div:hover #date { display: initial; }
 #name-area {
     color: white;
     font: 12px "Lucida Grande", Sans-Serif;
