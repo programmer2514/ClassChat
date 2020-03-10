@@ -9,7 +9,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
-
     <script type="text/javascript">
 
         var chatroom = localStorage.getItem('room');
@@ -118,11 +117,6 @@
             $("#stop-rec").focus();
         };
         recognition.onend = function() {
-            $("#instructions").html('Voice recognition complete.');
-            var snd = new Audio("sounds/stop.wav");
-            snd.play();
-        };
-        recognition.onspeechend = function() {
             $("#instructions").html('Voice recognition complete.');
             var snd = new Audio("sounds/stop.wav");
             snd.play();
