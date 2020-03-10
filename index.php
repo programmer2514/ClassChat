@@ -43,6 +43,8 @@
                     var pwdchk = prompt("Admin Password:", "");
                     if (pwdchk !== atob(sessionStorage.getItem('pwdTemp'))) {
                         alert('Incorrect Password.\nAccess Denied!');
+                        $('#uname').val('');
+                        $('#uname').focus();
                         return false;
                     }
                 }

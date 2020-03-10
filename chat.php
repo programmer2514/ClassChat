@@ -276,3 +276,8 @@
         header('Location: chat.php'); 
     }
 ?>
+<script type="text/javascript">
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
